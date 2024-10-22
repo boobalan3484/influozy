@@ -1,14 +1,417 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@import "bootstrap/dist/css/bootstrap.css";
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+.jost {
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
-@media (prefers-color-scheme: dark) {
+.raleway {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.caveat {
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.inter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+:root {
+  --e-global-color-primary: #3498DB;
+  --e-global-color-secondary: #121A21;
+  --e-global-color-text: #34495E;
+  --e-global-color-accent: #9B59B6;
+  --e-global-color-dea41e4: #2ECC71;
+  --e-global-color-308e809: #F0F4F7;
+  --e-global-color-a291686: #FFFFFF;
+  --e-global-color-9eaa092: #D0DDE6;
+  --e-global-color-a954db2: #02010100;
+  --e-global-color-d2c321f: #1ABC9C;
+  --e-global-typography-primary-font-family: "Jost";
+  --e-global-typography-primary-font-size: 54px;
+  --e-global-typography-primary-font-weight: 600;
+  --e-global-typography-primary-text-transform: capitalize;
+  --e-global-typography-primary-line-height: 1.1em;
+  --e-global-typography-primary-letter-spacing: -2px;
+  --e-global-typography-secondary-font-family: "Jost";
+  --e-global-typography-secondary-font-size: 42px;
+  --e-global-typography-secondary-font-weight: 600;
+  --e-global-typography-secondary-line-height: 1.1em;
+  --e-global-typography-text-font-family: "Jost";
+  --e-global-typography-text-font-size: 17px;
+  --e-global-typography-text-font-weight: 600;
+  --e-global-typography-text-text-transform: capitalize;
+  --e-global-typography-text-line-height: 1.2em;
+  --e-global-typography-accent-font-family: "Raleway";
+  --e-global-typography-accent-font-size: 20px;
+  --e-global-typography-accent-font-weight: 500;
+  --e-global-typography-accent-line-height: 1.5em;
+  --e-global-typography-b2ce6af-font-family: "Inter";
+  --e-global-typography-b2ce6af-font-size: 16px;
+  --e-global-typography-b2ce6af-line-height: 1.5em;
+  --e-global-typography-69c152f-font-family: "Inter";
+  --e-global-typography-69c152f-font-size: 14px;
+  --e-global-typography-69c152f-line-height: 1.6em;
+  --e-global-typography-520c191-font-family: "Jost";
+  --e-global-typography-520c191-font-size: 14px;
+  --e-global-typography-520c191-font-weight: 600;
+  --e-global-typography-520c191-text-transform: uppercase;
+  --e-global-typography-520c191-line-height: 1.5em;
+  --e-global-typography-520c191-letter-spacing: 0.5px;
+  --e-global-typography-583e54c-font-family: "Jost";
+  --e-global-typography-583e54c-font-size: 54px;
+  --e-global-typography-583e54c-font-weight: 600;
+  --e-global-typography-583e54c-text-transform: capitalize;
+  --e-global-typography-583e54c-line-height: 1.1em;
+  --e-global-typography-583e54c-letter-spacing: -2px;
+  --e-global-typography-5d167aa-font-family: "Jost";
+  --e-global-typography-5d167aa-font-size: 42px;
+  --e-global-typography-5d167aa-font-weight: 600;
+  --e-global-typography-5d167aa-line-height: 1.1em;
+  --e-global-typography-d3dae9a-font-family: "Jost";
+  --e-global-typography-d3dae9a-font-size: 32px;
+  --e-global-typography-d3dae9a-font-weight: 600;
+  --e-global-typography-d3dae9a-line-height: 1.2em;
+  --e-global-typography-83682a1-font-family: "Jost";
+  --e-global-typography-83682a1-font-size: 25px;
+  --e-global-typography-83682a1-font-weight: 600;
+  --e-global-typography-83682a1-line-height: 1.2em;
+  --e-global-typography-7044a64-font-family: "Jost";
+  --e-global-typography-7044a64-font-size: 20px;
+  --e-global-typography-7044a64-font-weight: 600;
+  --e-global-typography-7044a64-line-height: 1.2em;
+  --e-global-typography-84ca66e-font-family: "Caveat";
+  --e-global-typography-84ca66e-font-size: 22px;
+  --e-global-typography-84ca66e-font-weight: 700;
+  --e-global-typography-84ca66e-text-transform: capitalize;
+  --e-global-typography-84ca66e-line-height: 1.2em;
+  --e-global-typography-84ca66e-letter-spacing: 1px;
+  --e-global-typography-112b6c4-font-family: "Inter";
+  --e-global-typography-112b6c4-font-size: 13px;
+  --e-global-typography-112b6c4-font-weight: 400;
+  --e-global-typography-3715edf-font-family: "Jost";
+  --e-global-typography-3715edf-font-size: 68px;
+  --e-global-typography-3715edf-font-weight: 600;
+  --e-global-typography-3715edf-text-transform: capitalize;
+  --e-global-typography-3715edf-line-height: 1em;
+  --e-global-typography-3715edf-letter-spacing: -2px;
+  color: var(--e-global-color-text);
+  font-family: var(--e-global-typography-b2ce6af-font-family), Sans-serif;
+  font-size: var(--e-global-typography-b2ce6af-font-size);
+  line-height: var(--e-global-typography-b2ce6af-line-height);
+  letter-spacing: var(--e-global-typography-b2ce6af-letter-spacing);
+  word-spacing: var(--e-global-typography-b2ce6af-word-spacing);
+}
+
+.a {
+  color: var(--e-global-color-secondary);
+}
+
+.a:hover {
+  color: var(--e-global-color-accent);
+}
+
+.h1 {
+  color: var(--e-global-color-secondary);
+  font-family: var(--e-global-typography-583e54c-font-family), Sans-serif;
+  font-size: var(--e-global-typography-583e54c-font-size);
+  font-weight: var(--e-global-typography-583e54c-font-weight);
+  text-transform: var(--e-global-typography-583e54c-text-transform);
+  line-height: var(--e-global-typography-583e54c-line-height);
+  letter-spacing: var(--e-global-typography-583e54c-letter-spacing);
+  word-spacing: var(--e-global-typography-583e54c-word-spacing);
+}
+
+.h2 {
+  color: var(--e-global-color-secondary);
+  font-family: var(--e-global-typography-5d167aa-font-family), Sans-serif;
+  font-size: var(--e-global-typography-5d167aa-font-size);
+  font-weight: var(--e-global-typography-5d167aa-font-weight);
+  line-height: var(--e-global-typography-5d167aa-line-height);
+  letter-spacing: var(--e-global-typography-5d167aa-letter-spacing);
+  word-spacing: var(--e-global-typography-5d167aa-word-spacing);
+}
+
+.h3 {
+  color: var(--e-global-color-secondary);
+  font-family: var(--e-global-typography-d3dae9a-font-family), Sans-serif;
+  font-size: var(--e-global-typography-d3dae9a-font-size);
+  font-weight: var(--e-global-typography-d3dae9a-font-weight);
+  line-height: var(--e-global-typography-d3dae9a-line-height);
+  letter-spacing: var(--e-global-typography-d3dae9a-letter-spacing);
+  word-spacing: var(--e-global-typography-d3dae9a-word-spacing);
+}
+
+.h4 {
+  color: var(--e-global-color-secondary);
+  font-family: var(--e-global-typography-83682a1-font-family), Sans-serif;
+  font-size: var(--e-global-typography-83682a1-font-size);
+  font-weight: var(--e-global-typography-83682a1-font-weight);
+  line-height: var(--e-global-typography-83682a1-line-height);
+  letter-spacing: var(--e-global-typography-83682a1-letter-spacing);
+  word-spacing: var(--e-global-typography-83682a1-word-spacing);
+}
+
+.h5 {
+  color: var(--e-global-color-secondary);
+  font-family: var(--e-global-typography-7044a64-font-family), Sans-serif;
+  font-size: var(--e-global-typography-7044a64-font-size);
+  font-weight: var(--e-global-typography-7044a64-font-weight);
+  line-height: var(--e-global-typography-7044a64-line-height);
+  letter-spacing: var(--e-global-typography-7044a64-letter-spacing);
+  word-spacing: var(--e-global-typography-7044a64-word-spacing);
+}
+
+.h6 {
+  color: var(--e-global-color-d2c321f);
+  font-family: var(--e-global-typography-84ca66e-font-family), Sans-serif;
+  font-size: var(--e-global-typography-84ca66e-font-size);
+  font-weight: var(--e-global-typography-84ca66e-font-weight);
+  text-transform: var(--e-global-typography-84ca66e-text-transform);
+  line-height: var(--e-global-typography-84ca66e-line-height);
+  letter-spacing: var(--e-global-typography-84ca66e-letter-spacing);
+  word-spacing: var(--e-global-typography-84ca66e-word-spacing);
+}
+
+.button,
+.input[type="button"],
+.input[type="submit"] {
+  font-family: var(--e-global-typography-text-font-family), Sans-serif;
+  font-size: var(--e-global-typography-text-font-size);
+  font-weight: var(--e-global-typography-text-font-weight);
+  text-transform: var(--e-global-typography-text-text-transform);
+  line-height: var(--e-global-typography-text-line-height);
+  color: var(--e-global-color-a291686);
+  background-color: var(--e-global-color-accent);
+  border-style: solid;
+  border-width: 0px 0px 0px 0px;
+  border-radius: 30px 30px 30px 30px;
+}
+
+.button:hover,
+.button:focus,
+.input[type="button"]:hover,
+.input[type="button"]:focus,
+.input[type="submit"]:hover,
+.input[type="submit"]:focus {
+  color: var(--e-global-color-a291686);
+  background-color: var(--e-global-color-text);
+  border-style: solid;
+  border-width: 0px 0px 0px 0px;
+}
+
+.label {
+  color: var(--e-global-color-secondary);
+  font-family: "Jost", Sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1.5em;
+}
+
+.input:not([type="button"]):not([type="submit"]),
+.textarea {
+  font-family: "Inter", Sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--e-global-color-text);
+  background-color: var(--e-global-color-a291686);
+  border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  border-color: var(--e-global-color-9eaa092);
+  border-radius: 5px 5px 5px 5px;
+}
+
+.input:focus:not([type="button"]):not([type="submit"]),
+.textarea:focus {
+  color: var(--e-global-color-text);
+  background-color: var(--e-global-color-a291686);
+  border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  border-color: var(--e-global-color-9eaa092);
+}
+
+@media(max-width: 1024px) {
+  :root {
+    --e-global-typography-primary-font-size: 43px;
+    --e-global-typography-secondary-font-size: 35px;
+    --e-global-typography-text-font-size: 16px;
+    --e-global-typography-accent-font-size: 18px;
+    --e-global-typography-b2ce6af-font-size: 15px;
+    --e-global-typography-69c152f-font-size: 13px;
+    --e-global-typography-520c191-font-size: 13px;
+    --e-global-typography-583e54c-font-size: 43px;
+    --e-global-typography-5d167aa-font-size: 35px;
+    --e-global-typography-d3dae9a-font-size: 27.5px;
+    --e-global-typography-83682a1-font-size: 22px;
+    --e-global-typography-7044a64-font-size: 18px;
+    --e-global-typography-84ca66e-font-size: 19.8px;
+    --e-global-typography-112b6c4-font-size: 12px;
+    --e-global-typography-3715edf-font-size: 54px;
+    font-size: var(--e-global-typography-b2ce6af-font-size);
+    line-height: var(--e-global-typography-b2ce6af-line-height);
+    letter-spacing: var(--e-global-typography-b2ce6af-letter-spacing);
+    word-spacing: var(--e-global-typography-b2ce6af-word-spacing);
+  }
+
+  .h1 {
+    font-size: var(--e-global-typography-583e54c-font-size);
+    line-height: var(--e-global-typography-583e54c-line-height);
+    letter-spacing: var(--e-global-typography-583e54c-letter-spacing);
+    word-spacing: var(--e-global-typography-583e54c-word-spacing);
+  }
+
+  .h2 {
+    font-size: var(--e-global-typography-5d167aa-font-size);
+    line-height: var(--e-global-typography-5d167aa-line-height);
+    letter-spacing: var(--e-global-typography-5d167aa-letter-spacing);
+    word-spacing: var(--e-global-typography-5d167aa-word-spacing);
+  }
+
+  .h3 {
+    font-size: var(--e-global-typography-d3dae9a-font-size);
+    line-height: var(--e-global-typography-d3dae9a-line-height);
+    letter-spacing: var(--e-global-typography-d3dae9a-letter-spacing);
+    word-spacing: var(--e-global-typography-d3dae9a-word-spacing);
+  }
+
+  .h4 {
+    font-size: var(--e-global-typography-83682a1-font-size);
+    line-height: var(--e-global-typography-83682a1-line-height);
+    letter-spacing: var(--e-global-typography-83682a1-letter-spacing);
+    word-spacing: var(--e-global-typography-83682a1-word-spacing);
+  }
+
+  .h5 {
+    font-size: var(--e-global-typography-7044a64-font-size);
+    line-height: var(--e-global-typography-7044a64-line-height);
+    letter-spacing: var(--e-global-typography-7044a64-letter-spacing);
+    word-spacing: var(--e-global-typography-7044a64-word-spacing);
+  }
+
+  .h6 {
+    font-size: var(--e-global-typography-84ca66e-font-size);
+    line-height: var(--e-global-typography-84ca66e-line-height);
+    letter-spacing: var(--e-global-typography-84ca66e-letter-spacing);
+    word-spacing: var(--e-global-typography-84ca66e-word-spacing);
+  }
+
+  .button,
+  .input[type="button"],
+  .input[type="submit"] {
+    font-size: var(--e-global-typography-text-font-size);
+    line-height: var(--e-global-typography-text-line-height);
+  }
+
+  .label {
+    font-size: 16px;
+  }
+
+  .input:not([type="button"]):not([type="submit"]),
+  .textarea {
+    font-size: 15px;
+  }
+}
+
+@media(max-width: 767px) {
+  :root {
+    --e-global-typography-primary-font-size: 33px;
+    --e-global-typography-secondary-font-size: 28px;
+    --e-global-typography-text-font-size: 14px;
+    --e-global-typography-accent-font-size: 16px;
+    --e-global-typography-b2ce6af-font-size: 14px;
+    --e-global-typography-69c152f-font-size: 12px;
+    --e-global-typography-520c191-font-size: 12px;
+    --e-global-typography-583e54c-font-size: 33px;
+    --e-global-typography-5d167aa-font-size: 28px;
+    --e-global-typography-d3dae9a-font-size: 22.5px;
+    --e-global-typography-83682a1-font-size: 19px;
+    --e-global-typography-7044a64-font-size: 16px;
+    --e-global-typography-84ca66e-font-size: 17.8px;
+    --e-global-typography-112b6c4-font-size: 11px;
+    --e-global-typography-3715edf-font-size: 40px;
+    font-size: var(--e-global-typography-b2ce6af-font-size);
+    line-height: var(--e-global-typography-b2ce6af-line-height);
+    letter-spacing: var(--e-global-typography-b2ce6af-letter-spacing);
+    word-spacing: var(--e-global-typography-b2ce6af-word-spacing);
+  }
+
+  .h1 {
+    font-size: var(--e-global-typography-583e54c-font-size);
+    line-height: var(--e-global-typography-583e54c-line-height);
+    letter-spacing: var(--e-global-typography-583e54c-letter-spacing);
+    word-spacing: var(--e-global-typography-583e54c-word-spacing);
+  }
+
+  .h2 {
+    font-size: var(--e-global-typography-5d167aa-font-size);
+    line-height: var(--e-global-typography-5d167aa-line-height);
+    letter-spacing: var(--e-global-typography-5d167aa-letter-spacing);
+    word-spacing: var(--e-global-typography-5d167aa-word-spacing);
+  }
+
+  .h3 {
+    font-size: var(--e-global-typography-d3dae9a-font-size);
+    line-height: var(--e-global-typography-d3dae9a-line-height);
+    letter-spacing: var(--e-global-typography-d3dae9a-letter-spacing);
+    word-spacing: var(--e-global-typography-d3dae9a-word-spacing);
+  }
+
+  .h4 {
+    font-size: var(--e-global-typography-83682a1-font-size);
+    line-height: var(--e-global-typography-83682a1-line-height);
+    letter-spacing: var(--e-global-typography-83682a1-letter-spacing);
+    word-spacing: var(--e-global-typography-83682a1-word-spacing);
+  }
+
+  .h5 {
+    font-size: var(--e-global-typography-7044a64-font-size);
+    line-height: var(--e-global-typography-7044a64-line-height);
+    letter-spacing: var(--e-global-typography-7044a64-letter-spacing);
+    word-spacing: var(--e-global-typography-7044a64-word-spacing);
+  }
+
+  .h6 {
+    font-size: var(--e-global-typography-84ca66e-font-size);
+    line-height: var(--e-global-typography-84ca66e-line-height);
+    letter-spacing: var(--e-global-typography-84ca66e-letter-spacing);
+    word-spacing: var(--e-global-typography-84ca66e-word-spacing);
+  }
+
+  .button,
+  .input[type="button"],
+  .input[type="submit"] {
+    font-size: var(--e-global-typography-text-font-size);
+    line-height: var(--e-global-typography-text-line-height);
+  }
+
+  .label {
+    font-size: 15px;
+  }
+
+  .input:not([type="button"]):not([type="submit"]),
+  .textarea {
+    font-size: 14px;
+  }
+}
+
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-}
+} */
 
 html,
 body {
@@ -32,11 +435,27 @@ body {
 
 a {
   color: inherit;
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
+} */
+
+.section-wrapper {
+  overflow: hidden;
+  padding: 6em 1em 6em 1em;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+  padding: unset !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: unset !important;
 }

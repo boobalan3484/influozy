@@ -1,0 +1,17 @@
+.headline {
+    color: var(--e-global-color-secondary);
+    margin: 0px 0px 0px 0px;
+    font-family: var(--e-global-typography-d3dae9a-font-family), Sans-serif;
+    font-size: var(--e-global-typography-d3dae9a-font-size);
+    font-weight: var(--e-global-typography-d3dae9a-font-weight);
+    line-height: var(--e-global-typography-d3dae9a-line-height);
+    letter-spacing: var(--e-global-typography-d3dae9a-letter-spacing);
+    word-spacing: var(--e-global-typography-d3dae9a-word-spacing);
+}
+
+.headline-highlight{
+    color: var(--e-global-color-accent);
+    transition: all .3s ease;
+    display: inline-block;
+    font-weight: 700;
+}
