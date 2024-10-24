@@ -20,11 +20,25 @@ const AutoScrollCarousel = () => {
                 type: 'loop',
                 drag: 'free',
                 focus: 'center',
-                perPage: 3,
                 pagination: false,
                 arrows: false,
                 autoScroll: {
                     speed: 0.5, // Adjust the scroll speed
+                },
+                perPage: 3, // Default for xl and larger screens
+                breakpoints: {
+                    1200: { // md breakpoint
+                        perPage: 2,
+                    },
+                    992: { // md breakpoint
+                        perPage: 3,
+                    },
+                    768: { // sm breakpoint
+                        perPage: 3,
+                    },
+                    576: { // xs breakpoint
+                        perPage: 2,
+                    },
                 },
             });
 

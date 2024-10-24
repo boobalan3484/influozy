@@ -2,6 +2,7 @@
 import React, { useEffect } from 'react'
 import AOS from 'aos'
 import "aos/dist/aos.css"
+import Header from '@/component/Header/Header';
 import Hero from "@/component/Hero/Hero";
 import HeroSubSection from "@/component/HeroSub/HeroSubSection";
 import About from "@/component/AboutUs/About";
@@ -14,7 +15,6 @@ import PlainImgBanner from '@/component/PlainImgBanner/PlainImgBanner';
 import LatestBlogs from '@/component/LatestBlogs/LatestBlogs';
 import FrequentlyAsked from '@/component/FAQ/FrequentlyAsked';
 import Footer from '@/component/Footer/Footer';
-import Header from '@/component/Header/Header';
 
 const Layout = () => {
     useEffect(() => {
